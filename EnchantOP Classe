@@ -1,0 +1,32 @@
+import org.bukkit.command.Command;
+import org.bukkit.command.CommandExecutor;
+import org.bukkit.command.CommandSender;
+import org.bukkit.entity.Player;
+import org.bukkit.inventory.ItemStack;
+
+public class EnchantOPCommand implements CommandExecutor {
+
+    @Override
+    public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {
+        if (!(sender instanceof Player)) {
+            sender.sendMessage("Questo comando può essere eseguito solo da un giocatore.");
+            return false;
+        }
+
+        Player player = (Player) sender;
+        ItemStack itemInHand = player.getInventory().getItemInMainHand();
+
+        if (itemInHand == null || itemInHand.getType().isAir()) {
+            player.sendMessage("Devi tenere un oggetto in mano per eseguire questo comando.");
+            return false;
+        }
+
+        if (!player.isOp()) {
+            player.sendMessage("Devi essere un operatore per eseguire questo comando.");
+            return false;
+        }
+
+        EnchantmentHandler.handleEnchantmentCommand(player, itemInHand);
+        return true;
+    }
+}
