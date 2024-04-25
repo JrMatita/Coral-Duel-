@@ -1,0 +1,36 @@
+import org.bukkit.enchantments.Enchantment;
+import org.bukkit.entity.Player;
+import org.bukkit.inventory.ItemStack;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Map;
+
+public class EnchantmentHandler {
+
+    public static void handleEnchantmentCommand(Player player, ItemStack item) {
+        List<String> applicableEnchantments = getApplicableEnchantments(item);
+
+        if (applicableEnchantments.isEmpty()) {
+            player.sendMessage("Non ci sono incantesimi applicabili all'oggetto in mano.");
+        } else {
+            player.sendMessage("Incantesimi applicabili:");
+            for (String enchantment : applicableEnchantments) {
+                player.sendMessage(enchantment);
+            }
+        }
+    }
+
+    private static List<String> getApplicableEnchantments(ItemStack item) {
+        List<String> applicableEnchantments = new ArrayList<>();
+        Map<Enchantment, Integer> enchantments = item.getEnchantments();
+
+        for (Enchantment enchantment : Enchantment.values()) {
+            if (enchantment.canEnchantItem(item)) {
+                applicableEnchantments.add(enchantment.getKey().getKey());
+            }
+        }
+
+        return applicableEnchantments;
+    }
+}
