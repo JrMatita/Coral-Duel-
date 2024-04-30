@@ -1,3 +1,5 @@
+**Duel Plugin**
+
 Questo è un plugin che serve per avviare dei duelli relastici!
 Ha il comando 
 /duel per mandare un duel al player ed una volta eseguito ti teletrasporta nel mondo dedicato;
