@@ -1,0 +1,41 @@
+#File da configurazione del plugin duel custom
+#Modificare kit ed permessi ed la connessione al database
+
+
+duel_world: world_duels
+kits:
+  kit1:
+    permission: kit.kit1
+    items:
+      - iron_sword
+      - iron_armor
+    reward:
+      money: 50
+  kit2:
+    permission: kit.kit2
+    items:
+      - diamond_sword
+      - diamond_armor
+    reward:
+      money: 100
+  kit3:
+    permission: kit.kit3
+    items:
+      - gold_sword
+      - gold_armor
+    reward:
+      money: 75
+redeemable_kits:
+  kit3:
+    permission: kit.kit3.redeem
+    items:
+      - gold_sword
+      - gold_armor
+    reward:
+      money: 75
+stats_mysql:
+  host: localhost
+  port: 3306
+  database: player_stats
+  username: root
+  password: password
