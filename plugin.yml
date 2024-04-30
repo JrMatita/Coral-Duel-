@@ -1,0 +1,18 @@
+name: DuelCoralMC
+version: 1.0
+main: it.coralmc
+description: Plugin provino coralmc!
+api-version: 1.20
+commands:
+  duel:
+    description: Starta duello con un altro player
+    usage: /duel <player>
+    permission: duels.duel
+  kit:
+    description: Personalizza i Kit del duel
+    usage: /kit <create|delete|list|give> [kitName]
+    permission: duels.kit
+  leaderboard:
+    description: Guarda le statistiche dei tuoi avversaru
+    usage: /leaderboard
+    permission: duels.leaderboard
