@@ -19,7 +19,7 @@ public class LeaderboardCommand implements CommandExecutor {
         if (sender instanceof Player) {
             Player player = (Player) sender;
             if (player.hasPermission("duels.leaderboard")) {
-                List<PlayerStats> leaderboard = statsManager.getLeaderboard(10); // Retrieve top 10 players
+                List<PlayerStats> leaderboard = statsManager.getLeaderboard(10); 
                 player.sendMessage("===== Leaderboard =====");
                 for (int i = 0; i < leaderboard.size(); i++) {
                     PlayerStats stats = leaderboard.get(i);
@@ -27,10 +27,10 @@ public class LeaderboardCommand implements CommandExecutor {
                 }
                 return true;
             } else {
-                player.sendMessage("You don't have permission to view the leaderboard.");
+                player.sendMessage("Non hai il permesso di visualizzare la leaderbord");
             }
         } else {
-            sender.sendMessage("Only players can use this command.");
+            sender.sendMessage("Solo i player posso usare questo comando.");
         }
         return false;
     }
