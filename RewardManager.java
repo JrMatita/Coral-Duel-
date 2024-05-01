@@ -31,19 +31,19 @@ public class RewardManager {
     public void giveReward(Player player, Reward reward) {
         switch (reward.getType()) {
             case MONEY:
-                // Esegui l'aggiunta di denaro al giocatore
+                
                 int money = reward.getValue();
-                // esempio: EconomyManager.giveMoney(player, money);
+                //EconomyManager.giveMoney(player, money);
                 break;
             case ITEMS:
-                // Esegui l'aggiunta di oggetti al giocatore
+                
                 List<ItemStack> items = reward.getItems();
-                // esempio: InventoryManager.giveItems(player, items);
+                InventoryManager.giveItems(player, items);
                 break;
             case EXPERIENCE:
-                // Esegui l'aggiunta di esperienza al giocatore
+                
                 int experience = reward.getValue();
-                // esempio: ExperienceManager.giveExperience(player, experience);
+                //ExperienceManager.giveExperience(player, experience);
                 break;
             default:
                 break;
