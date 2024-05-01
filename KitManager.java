@@ -26,7 +26,7 @@ public class KitManager {
 
         if (config.isConfigurationSection("kits")) {
             for (String kitName : config.getConfigurationSection("kits").getKeys(false)) {
-                ItemStack[] items = null; // Load items from config
+                ItemStack[] items = null; 
                 kits.put(kitName, new Kit(kitName, items));
             }
         }
