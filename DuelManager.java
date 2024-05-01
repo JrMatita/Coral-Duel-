@@ -40,7 +40,7 @@ public class DuelManager {
     public void requestDuel(Player sender, Player target, String kitName) {
         pendingDuels.put(target, sender);
         sender.sendMessage("Duel requested to " + target.getName());
-        target.sendMessage(sender.getName() + " wants to duel you. Type /duel accept to accept.");
+        target.sendMessage(sender.getName() + " per accettare il duello usa /duel accept");
     }
 
     public void acceptDuel(Player player) {
@@ -49,7 +49,7 @@ public class DuelManager {
             startDuel(sender, player);
             pendingDuels.remove(player);
         } else {
-            player.sendMessage("No pending duel requests.");
+            player.sendMessage("Non hai richieste in sospeso!");
         }
     }
 
