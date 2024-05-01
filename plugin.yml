@@ -1,6 +1,6 @@
 name: DuelCoralMC
 version: 1.0
-main: it.coralmc
+main: it.coralmc{Tua Main}
 description: Plugin provino coralmc!
 api-version: 1.20
 commands:
