@@ -39,7 +39,7 @@ public class DuelManager {
 
     public void requestDuel(Player sender, Player target, String kitName) {
         pendingDuels.put(target, sender);
-        sender.sendMessage("Duel requested to " + target.getName());
+        sender.sendMessage("Richiesta di duello mandata a " + target.getName());
         target.sendMessage(sender.getName() + " per accettare il duello usa /duel accept");
     }
 
