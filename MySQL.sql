@@ -27,10 +27,10 @@ public class LeaderboardCommand implements CommandExecutor {
                 }
                 return true;
             } else {
-                player.sendMessage("You don't have permission to view the leaderboard.");
+                player.sendMessage("Non hai il permesso di visualizzare la learderbord");
             }
         } else {
-            sender.sendMessage("Only players can use this command.");
+            sender.sendMessage("Solo i player posso eseguire questo comando!");
         }
         return false;
     }
