@@ -38,7 +38,7 @@ public class RewardManager {
             case ITEMS:
                 
                 List<ItemStack> items = reward.getItems();
-                InventoryManager.giveItems(player, items);
+                //InventoryManager.giveItems(player, items);
                 break;
             case EXPERIENCE:
                 
