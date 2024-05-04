@@ -11,18 +11,18 @@ In caso non avete capito il funzionamento del plugin eseguite in gioco il comand
 
 
 ## Funzionalita
-[x]Permette di avviare dei duelli realistici!
-[x]Sistema di learderbord top morti!
-[x]Sistema di Kit personalizzabili tramite config.yml
+**Permette di avviare dei duelli realistici!**
+**Sistema di learderbord top morti!**
+**Sistema di Kit personalizzabili tramite config.yml**
 
 
 ## Comandi
-`/duel` per avviare un duel realistico ed verrete teletrasportati nel mondo selezionato dalla config.yml (duel.word)
-`/leaderboard` per vedere la classifica dei duel
-`/kit` per scegliere il kit che si posso personalizzare asseconda delle esigenze ed ognuno dei kit ha un permesso tipo kit1.use
+**`/duel` per avviare un duel realistico ed verrete teletrasportati nel mondo selezionato dalla config.yml (duel.word)**
+**`/leaderboard` per vedere la classifica dei duel**
+**`/kit` per scegliere il kit che si posso personalizzare asseconda delle esigenze ed ognuno dei kit ha un permesso tipo kit1.use**
 
 ## Funzioni in Manutenzione
-Nessuna per adesso
+**Nessuna per adesso**
 
 ## Segnalazione dei bug
-Se trovate dei bug segnalatemi nei dm Discord @Matita_IT4 od Telegram @Mare12K
+**Se trovate dei bug segnalatemi nei dm Discord @Matita_IT4 od Telegram @Mare12K**
